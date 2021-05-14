@@ -22,8 +22,8 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Solution on Frontend Mentor]()
-- Live Site URL: [Github Pages Link]()
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/social-proof-section-H56JMikZ6)
+- Live Site URL: [Github Pages Link](https://landon345.github.io/frontendmentor-social-proof-section/)
 
 ## My process
 
