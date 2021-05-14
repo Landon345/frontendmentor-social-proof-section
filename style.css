@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+.container {
+  margin: 5%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+section {
+  margin-top: 50px;
+}
+header {
+  text-align: center;
+}
+h1 {
+  color: hsl(300, 43%, 22%);
+  margin: 10px 30px;
+}
+header p {
+  color: hsl(300, 43%, 22%);
+  line-height: 1.5;
+}
+.star {
+  margin: 0px 5px 10px 5px;
+}
+.rated {
+  font-weight: 700;
+}
+.stars-card {
+  background-color: hsl(300, 24%, 96%);
+  padding: 15px 40px;
+  text-align: center;
+  color: hsl(300, 43%, 22%);
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.stars {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: hsl(300, 43%, 22%);
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 5px;
+}
+.profile {
+  border-radius: 50%;
+  height: 50px;
+  margin-right: 30px;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+}
+.name {
+  color: white;
+}
+.verified {
+  margin-top: 4px;
+  color: hsl(333, 80%, 67%);
+}
+.card-paragraph {
+  color: white;
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-image: url("./images/bg-pattern-top-desktop.svg"),
+      url("./images/bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+  }
+  section {
+    margin: 0;
+  }
+  header {
+    grid-area: header;
+    text-align: left;
+  }
+  header h1 {
+    margin: 10px 35% 0 0;
+  }
+  header p {
+    margin: 10px 25% 0 0;
+  }
+  .ratings {
+    grid-area: ratings;
+  }
+
+  .reviews {
+    grid-area: reviews;
+    display: flex;
+  }
+  .container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header ratings"
+      "reviews reviews";
+    margin: 0 10%;
+    height: 100vh;
+  }
+  .card {
+    margin-right: 25px;
+  }
+  .card:nth-child(1) {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .card:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .card:nth-child(3) {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .stars-card:nth-child(1) {
+    margin-left: 0px;
+    margin-right: 60px;
+  }
+  .stars-card:nth-child(2) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .stars-card:nth-child(3) {
+    margin-left: 60px;
+    margin-right: 0px;
+  }
+
+  .stars-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .star {
+    margin: 0px 5px 0px 5px;
+  }
+  .attribution {
+    margin-top: 30px;
+    text-align: left;
+  }
+}
